@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Afacad Flux", sans-serif;
+    background: linear-gradient(45deg, #030e26, #1fcf9d);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#logo img {
+    width: 120px; 
+    height: auto;
+    background: transparent;
+}
+
+
+#exam-container {
+    width: 80%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 2s ease;
+}
+
+#exam-interface {
+    margin-top: 20px;
+}
+
+textarea {
+    width: 96%;
+    height: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 0px solid black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(1, 16, 30, 0.35) 0px -2px 6px 0px inset;
+    transition: box-shadow 0.3s ease-in-out;
+    resize: none;
+}
+
+textarea:focus {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+button {
+    background-color: #06111e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #0e4a87;
+}
+
+#alert-box {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    animation: shake 0.3s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+/* New CSS for webcam video size */
+video {
+    width: 150px; /* Reduce the width */
+    height: 100px; /* Reduce the height */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    transition: all;
+}

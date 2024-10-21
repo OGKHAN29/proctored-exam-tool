@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proctored Exam Tool</title>
+    <link rel="stylesheet" href="styles.css">  
+</head>
+<body>
+    <div id="logo">
+        <img src="photo.png.jpg" alt="Logo">
+    </div>
+    <div id="exam-container">
+        <h1>Welcome to the Proctored Exam</h1>
+        <p>Please complete the exam without leaving fullscreen or switching tabs. Suspicious movements may also be monitored. Violations will result in penalties.</p>
+
+        <button id="start-exam-btn">Start Exam</button>
+        
+        <div id="exam-interface" class="hidden">
+            <p>Answer the questions below:</p>
+
+            <!-- Questions Section -->
+            <div class="question">
+                <label>Question 1: What is 2 + 2?</label>
+                <input type="text" placeholder="Type your answer" id="q1">
+            </div>
+
+            <div class="question">
+                <label>Question 2: What is the capital of France?</label>
+                <input type="text" placeholder="Type your answer" id="q2">
+            </div>
+
+            <div class="question">
+                <label>Question 3: What is the largest planet in our solar system?</label>
+                <input type="text" placeholder="Type your answer" id="q3">
+            </div>
+
+            <div class="question">
+                <label>Question 4: Who wrote 'Hamlet'?</label>
+                <input type="text" placeholder="Type your answer" id="q4">
+            </div>
+
+            <div class="question">
+                <label>Question 5: What is the chemical symbol for water?</label>
+                <input type="text" placeholder="Type your answer" id="q5">
+            </div>
+
+            <button id="submit-btn">Submit</button>
+        </div>
+
+        <div id="alert-box" class="hidden">You switched tabs or left fullscreen mode. Please focus!</div>
+        
+        <div id="warning-box" class="hidden">Warning! Suspicious movement detected!</div>
+
+        <div id="violation-count" class="hidden">Warnings: 0/3</div>
+
+        <!-- Audio element for beep sound -->
+        <audio id="beep" src="beep.mp3" preload="auto"></audio>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
